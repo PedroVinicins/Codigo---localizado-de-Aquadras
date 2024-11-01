@@ -1,0 +1,86 @@
+#map{ width: 1349px; height: 645px; top: -1;} 
+
+body{
+    max-width: 1280px; 
+    height: 720px;
+    background-color: #040725;
+}
+.main-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 900;
+    top: -1;
+    width: 404px;
+    height: 645px;
+    max-width: 1000px;
+    background-color:  #302f37a9;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    z-index: 1000;
+}
+
+.main-infor{
+    display:flex;
+    flex-direction: column;
+    width: 267px;
+    height: 135px;
+}
+
+ img {
+    width: 170px;
+    height: 170px;
+    margin: 20px;
+}
+
+.main-infor input{
+    width: 267px;
+    height: 35px;
+    margin: 7px;
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+ }
+
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: rgb(255, 255, 255);  
+ }
+ 
+input{
+    display: flex;
+    width: 189px;
+    height: 35px;
+    color: white;
+    border: none;
+    background-color: rgb(0, 132, 255);
+    border-radius: 8px;
+}
+
+.main-right{
+    left: 30;
+    top: 270;
+    width: 645px;
+    height: 300px;
+    margin: 20px;
+    position: absolute;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.main-right h3{
+    padding: 10px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255); 
+    background-color: #040725;
+    border-radius: 5px;
+}
+
