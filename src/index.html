@@ -14,19 +14,20 @@
     <div id="map"></div>
     <main>
         <div class="search-bar">
-            <input class="int" type="text" placeholder="Buscar...">
-            <button type="submit"><i class="bi bi-search"></i></button> <!-- Ícone de lupa -->
-          </div>
-
+          <input class="int" type="text" id="search1" placeholder="Achei um Quadra!!...">
+          <div class="error-message" id="error-message"></div>
+          <button onclick="searchEndereco('search1')"><i class="bi bi-search"></i></button>
+        </div>
+        
         <div class="main-left">
                 <img src="/src/img/image.png" alt="Pefil Generico">
     
             <div class="main-infor">
                     <input type="text" placeholder="Seu nome é?">
-                    <input type="text" placeholder="Cidade/Bairro">
+                    <input type="text"  id="search2" placeholder="Cidade/Bairro">
                     <input type="tel" placeholder="Seu whatsapp">
                 </div>
-                <button>localizar</button>
+                <button onclick="searchEndereco('search2')">localizar</button>
             </div>
     
         <div class="main-right">
@@ -55,6 +56,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
     <script   src="/src/script/configMaps.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="/src/script/script.js"></script>
 
 </body>

@@ -54,10 +54,10 @@
   }
 
   .search-bar .int{
-      flex: 1;
-    top: -640;
+    flex: 1;
+    top: 20;
     left: 60;
-    position: relative;
+    position: fixed;
     width: 300px;
     padding: 10px;
     border: none;
@@ -68,18 +68,17 @@
     background-color: #1b1b1ede;
     font-size: 16px;
     z-index: 1000;  
-    transition: border-color 0.3s ease;
   }
 
   .search-bar button {
-    top: -678;
+    top: 20;
     left: 366;
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed ;
     border: none;
     background: #111;
     border-radius: 50%;
@@ -89,3 +88,29 @@
     transition: color 0.3s ease;
     z-index: 1000;
   }
+
+  .error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.8); /* Fundo vermelho translúcido */
+    color: #fff; /* Texto branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra */
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transição suave */
+    max-width: 80px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.error-message.show {
+    opacity: 100;
+}
