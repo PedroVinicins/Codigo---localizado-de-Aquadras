@@ -1,9 +1,10 @@
-#map{ width: 1349px; height: 645px; top: -1;} 
+#map{ width: 1349px; height: 645px; top: -1; } 
 
 body{
     max-width: 1280px; 
     height: 720px;
     background-color: #040725;
+    overflow-y: none;
 }
 .main-left{
     display: flex;
@@ -28,7 +29,8 @@ body{
     height: 135px;
 }
 
- img {
+ .main-left img{
+    display: flex;
     width: 170px;
     height: 170px;
     margin: 20px;
@@ -52,23 +54,41 @@ body{
     color: rgb(255, 255, 255);  
  }
  
-input{
-    display: flex;
-    width: 189px;
-    height: 35px;
-    color: white;
+button{
+    width: 179;
+    padding: 12px;
     border: none;
-    background-color: rgb(0, 132, 255);
-    border-radius: 8px;
+    border-radius: 20px;
+    color: white;
+    background-color: #0044ffd7;
 }
 
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+  }
+
+  .chat-input button {
+    background-color: #001fa8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
 .main-right{
-    left: 30;
-    top: 270;
-    width: 645px;
-    height: 300px;
-    margin: 20px;
-    position: absolute;
+    display: flex;
+    top: 30;
+    width: 1349px;
+    height: 444px;
+    position: relative;
+    background-color:  #302f37a9;
     backdrop-filter: blur(20px);
     border-radius: 5px;
     z-index: 1000;

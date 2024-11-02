@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +7,42 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/src/styles/reset.css">
     <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/chat.css">
     <title>Qualoca</title>
 </head>
 <body>
     <div id="map"></div>
     <main>
+        <div class="search-bar">
+            <input class="int" type="text" placeholder="Buscar...">
+            <button type="submit"><i class="bi bi-search"></i></button> <!-- Ícone de lupa -->
+          </div>
+
         <div class="main-left">
-            <div class="pefil">
                 <img src="/src/img/image.png" alt="Pefil Generico">
-            </div>
     
             <div class="main-infor">
                     <input type="text" placeholder="Seu nome é?">
                     <input type="text" placeholder="Cidade/Bairro">
                     <input type="tel" placeholder="Seu whatsapp">
                 </div>
-                <input type="button" value="localizar">
+                <button>localizar</button>
             </div>
     
         <div class="main-right">
-            <h3>Quadras proximas de voce</h3>
-            <div class="cart-left">
-
-            </div>
-            <div class="cart-right">
-                
+            <div class="chat-container">
+                <div class="chat-header">
+                  Chat de localizaçaes e mensagems
+                </div>
+            
+                <div id="chatMessages" class="chat-messages"></div>
+            
+                <div class="chat-input">
+                  <input id="chatInput" type="text" placeholder="Digite uma mensagem...">
+                  <button onclick="sendMessage()">Enviar</button>
+                </div>
+              </div>
+                </div>
             </div>
         </div>
     </main>
@@ -44,6 +55,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
     <script   src="/src/script/configMaps.js"></script>
+    <script src="/src/script/script.js"></script>
 
 </body>
 </html>
