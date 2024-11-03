@@ -46,7 +46,7 @@
     align-self: flex-start;
   }
 
-  .chat-input {
+  .chat-input{
     display: flex;
     padding: 10px;
     border: none;

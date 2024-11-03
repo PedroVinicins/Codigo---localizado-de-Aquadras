@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: fantasy;
     max-width: 1280px;
     height: 720px;
     background-color: #040725;
@@ -58,7 +59,7 @@ button {
     width: 179;
     padding: 12px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
     background-color: #0044ffd7;
@@ -73,11 +74,13 @@ button {
 }
 
 .chat-input button {
-    background-color: #001fa8;
+    background-color: #0044ffd7;
     color: white;
     border: none;
+    width: 50px;
+    height: 50px;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 100%;
     margin-left: 10px;
     cursor: pointer;
     font-size: 16px;
@@ -97,3 +100,59 @@ button {
     z-index: 1000;
 }
 
+.claud-phontos{
+    display: flex;
+    width: 300px;
+    max-width: 1000;
+    height: 430px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #111;
+}
+
+.claud-header {
+    background-color: #302f37a9;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.claud-input {
+    display: flex;
+    padding: 10px;
+    border: none;
+    background-color: #0000004b;
+  }
+
+  .claud{
+      flex: 1;
+      gap: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: xx-large;
+      color: white;
+      padding: 15px;
+      overflow-y: auto;
+      flex-direction: column;
+  }
+
+.fileInput{
+    display: flex;
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    background-color: #00000000;
+    color: #11111100;
+}

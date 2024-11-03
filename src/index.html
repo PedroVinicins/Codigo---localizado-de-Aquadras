@@ -16,43 +16,43 @@
   <div id="map"></div>
   <main>
     <div class="search-bar">
-      <input class="int" type="text" id="search1" placeholder="Achei um Quadra!!...">
+      <input class="int" type="text" id="search1" placeholder="Encontrei uma Quadra...">
       <button onclick="searchEndereco('search1')"><i class="bi bi-search"></i></button>
     </div>
     <div class="error-message" id="error-message"></div>
 
     <div class="main-left">
-      <img src="/src/img/image.png" alt="Pefil Generico">
+      <img src="/src/img/image.png" alt="Perfil Genérico">
 
       <div class="main-infor">
-        <input type="text" placeholder="Seu nome é?">
+        <input type="text" placeholder="Qual é o seu nome?">
         <input type="text" id="search2" placeholder="Cidade/Bairro">
-        <input type="tel" placeholder="Seu whatsapp">
-        <button onclick="searchEndereco('search2')">localizar</button>
+        <input type="tel" placeholder="Seu WhatsApp">
+        <button onclick="searchEndereco('search2')">Localizar</button>
       </div>
     </div>
 
     <div class="main-right">
       <div class="chat-container">
-        <div class="chat-header">Chat de localizaçaes e mensagems</div>
-        <div id="chatMessages" class="chat-messages">
-          <!--mens-->
-        </div>
+        <div class="chat-header">Chat de Localizações e Mensagens</div>
+        <div id="chatMessages" class="chat-messages"></div>
 
         <div class="chat-input">
           <input id="chatInput" type="text" placeholder="Digite uma mensagem...">
-          <button onclick="sendMessage()">Enviar</button>
+          <button onclick="sendMessage()"><i class="bi bi-send"></i></button>
         </div>
-      <div class="left">
-          
       </div>
+
+      <div class="claud-phontos">
+        <div class="claud-header">Upload de Arquivo</div>
+        <div class="claud"><i class="bi bi-image"></i></div>
+        <form id="uploadForm" enctype="multipart/form-data" class="claud-input">
+          <input type="file" id="fileInput" name="file" class="fileInput" required>
+          <button class="Enviar"><i class="bi bi-send-check-fill"></i></button>
+        </form>
       </div>
     </div>
   </main>
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
