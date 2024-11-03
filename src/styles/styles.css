@@ -1,12 +1,17 @@
-#map{ width: 1349px; height: 645px; top: -1; } 
+#map {
+    width: 1349px;
+    height: 645px;
+    top: -1;
+}
 
-body{
-    max-width: 1280px; 
+body {
+    max-width: 1280px;
     height: 720px;
     background-color: #040725;
     overflow-y: none;
 }
-.main-left{
+
+.main-left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,47 +21,40 @@ body{
     width: 404px;
     height: 645px;
     max-width: 1000px;
-    background-color:  #302f37a9;
+    background-color: #302f37a9;
     backdrop-filter: blur(20px);
     position: absolute;
     z-index: 1000;
 }
 
-.main-infor{
-    display:flex;
+.main-infor {
+    display: flex;
     flex-direction: column;
-    width: 267px;
-    height: 135px;
+    align-items: center;
+    width: 277px;
+    height: 277px;
 }
 
- .main-left img{
+.main-left img {
     display: flex;
     width: 170px;
-    height: 170px;
+    padding: 20px;
     margin: 20px;
 }
 
-.main-infor input{
+.main-infor input {
     width: 267px;
-    height: 35px;
+    padding: 12px;
     margin: 7px;
-    color: white;
-    background-color: transparent;
+    color: rgb(0, 0, 0);
+    background-color: white;
     border: solid 1px white;
     outline: none;
     border-radius: 8px;
     text-align: center;
 }
 
-::-webkit-input-placeholder {
-    color: rgb(255, 255, 255);
- }
-
- ::-moz-placeholder {  /* Firefox 19+ */
-    color: rgb(255, 255, 255);  
- }
- 
-button{
+button {
     width: 179;
     padding: 12px;
     border: none;
@@ -72,9 +70,9 @@ button{
     border: 1px solid #ccc;
     border-radius: 20px;
     outline: none;
-  }
+}
 
-  .chat-input button {
+.chat-input button {
     background-color: #001fa8;
     color: white;
     border: none;
@@ -83,28 +81,19 @@ button{
     margin-left: 10px;
     cursor: pointer;
     font-size: 16px;
-  }
+}
 
-.main-right{
+.main-right {
     display: flex;
     top: 30;
     width: 1349px;
-    height: 444px;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    background-color:  #302f37a9;
+    background-color: #302f37a9;
     backdrop-filter: blur(20px);
     border-radius: 5px;
     z-index: 1000;
 }
-
-.main-right h3{
-    padding: 10px;
-    float: right;
-    margin-right: 20px;
-    margin-top: 10px;
-    color: rgb(255, 255, 255); 
-    background-color: #040725;
-    border-radius: 5px;
-}
-
 
