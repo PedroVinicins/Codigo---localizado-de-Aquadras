@@ -19,7 +19,14 @@ async function searchEndereco(searchId) {
 
     map.setView([lat, lon], 15);
 
-    L.marker([lat, lon], { icon: customIcon }) 
+    const customIcon = L.icon({
+      iconUrl: '/src/img/mapsicon.png',
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32]
+    })
+
+    L.marker([lat, lon], { icon: customIcon })
       .addTo(map)
       .bindPopup(`<b>${resultado.display_name}</b>`)
       .openPopup();
